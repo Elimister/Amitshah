@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class X - D.B.R.A SOSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Bangers', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Lobster', cursive;
+            font-size: 48px;
+        }
+        nav {
+            text-align: center;
+            background-color: black;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        nav a:hover {
+            background-color: blue;
+            transition: 0.3s;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0px 4px 6px #ccc;
+        }
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid blue;
+            box-shadow: 0px 4px 6px #ccc;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2, h3 {
+            color: blue;
+            font-size: 36px;
+        }
+        h4 {
+            color: black;
+            font-size: 28px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 24px;
+        }
+        ul li {
+            margin: 15px 0;
+            font-size: 24px;
+        }
+        ul li img {
+            width: 80px;
+            height: auto;
+            vertical-align: middle;
+            margin-left: 10px;
+            border: 3px solid blue;
+            border-radius: 50%;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .timetable-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .timetable-header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .timetable-header h2 {
+            margin: 0;
+        }
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .timetable th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .timetable td {
+            background-color: #f2e7e7;
+        }
+        .timetable tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        .timetable td.subject {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .period, .time {
+            color: #555;
+            font-weight: bold;
+        }
+        .day {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+
+    <header>
+        Class X - D.B.R.A SOSE
+    </header>
+
+    <nav>
+        <a href="#" onclick="playSound()">Home</a>
+        <a href="https://www.edudel.nic.in/about/sose">About Us</a>
+        <a href="file:///C:/Users/gk546/p.html">Subjects</a>
+        <a href="#schedule">Schedule</a>
+        <a href="tel:01123890172">Contact</a>
+    </nav>
+    
+    <img src="https://www.dvusd.org/cms/lib/AZ01901092/Centricity/Domain/7054/Welcome%20to%20Our%20Class.gif" width="1500px" height="500px">
+    
+    <hr>
+    <h1 style="text-align:center;font-family:'Dancing Script';font-size:100px;">Schedule</h1>
+    <hr>
+
+    <div class="timetable-container" id="schedule">
+        <div class="timetable-header">
+            <h2>Class X Timetable</h2>
+        </div>
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th class="period">Day</th>
+                    <th class="time">1</th>
+                    <th class="time">2</th>
+                    <th class="time">3</th>
+                    <th class="time">4</th>
+                    <th class="time">R</th>
+                    <th class="time">5</th>
+                    <th class="time">6</th>
+                    <th class="time">7</th>
+                    <th class="time">8</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">E</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Science</td>
+                    <td class="subject">I.N.S</td>
+                    <td class="subject">Hindi</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">C</td>
+                    <td class="subject">English</td>
+                    <td class="subject">EMDD</td>
+                    <td class="subject">I.N.S</td>
+                    <td class="subject">Hindi</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td class="subject">Sports</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">E</td>
+                    <td class="subject">EMDD</td>
+                    <td class="subject">Science</td>
+                    <td class="subject">I.N.S</td>
+                    <td class="subject">Hindi</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">S</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Science</td>
+                    <td class="subject">I.N.S</td>
+                    <td class="subject">Hindi</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">S</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Science</td>
+                    <td class="subject">I.N.S</td>
+                    <td class="subject">Hindi</td>
+                </tr>
+                <tr>
+                    <td class="day">Saturday</td>
+                    <td class="subject">Math</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">SRP</td>
+                    <td class="subject">.</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Science</td>
+                    <td class="subject">Library</td>
+                    <td class="subject">EMDD</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 D.B.R.A SOSE. All rights reserved.</p>
+    </footer>
+
+    <!-- Audio element -->
+    <audio id="homeAudio" src="file:///C:/Users/gk546/Downloads/music_pop_6-28744.mp3"></audio>
+
+    <script>
+        function playSound() {
+            var homeAudio = document.getElementById('homeAudio');
+            homeAudio.play().catch(error => {
+                console.log('Play sound was prevented:', error);
+            });
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
